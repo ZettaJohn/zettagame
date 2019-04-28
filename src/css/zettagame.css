@@ -13,20 +13,23 @@
     border: 0px !important;
 }
 
-.img-logo-zettaEdit {
-    display: inline-block !important;
-    background-image: url("../assets/images/logo_zetta_edited.jpg");
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: 250px !important;
-    width: 249px !important;
-    height: 225px !important;
-    border: 0px !important;
+
+
+.boxContentOpened {
+    margin: 10px 10px 10px 10px !important;
+    background-color: #0783C1 !important;
+    border: 1px solid #C9C1D5;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+    width: 275px !important;
+    height: 250px !important;
 }
-.first-label{
+
+.first-label {
     width: 250px !important;
     height: 225px !important;
 }
+
 .boxContent {
     margin: 10px 10px 10px 10px !important;
     background-color: #0783C1 !important;
@@ -37,7 +40,8 @@
     height: 250px !important;
     cursor: pointer;
 }
-.boxContent:hover{
+
+.boxContent:hover {
     opacity: 0.6;
     transition: 0.3s;
 }
@@ -48,27 +52,159 @@
     max-height: 100%;
     height: 100%;
 }
-.labelContent{
+.img-logo-zettaEdit {
+    display: inline-block !important;
+    background-image: url("../assets/images/logo_zetta_edited.jpg");
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 250px !important;
+    width: 249px !important;
+    height: 210px !important;
+    border: 0px !important;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.img-logo-danger {
+    display: inline-block !important;
+    background-image: url("../assets/images/logo_danger.png");
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 250px !important;
+    width: 249px !important;
+    height: 210px !important;
+    border: 0px !important;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.labelContent.hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.labelContent {
     font-size: 48px;
     text-align: center;
     vertical-align: middle;
     margin: 10px 10px 10px 10px !important;
-    background: #ffffff;
+    background-color: transparent;
+    perspective: 1000px;
     border: 1px solid #C9C1D5;
     box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
-.box-form{
+.howtoplay{
+    border: 2px dashed rgb(250, 1, 1);
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 750px;
+}
+.mysticBox{
+    display: inline-block !important;
+    background-image: url("../assets/images/mystic_box.png");
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 120px !important;
+    width: 120px !important;
+    height: 125px !important;
+    border: 0px !important;
+}
+.mysticBoxContentOpened {
+    margin: 10px 10px 10px 10px !important;
+    background-color: #0783C1 !important;
+    border: 1px solid #C9C1D5;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+    width: 175px !important;
+    height: 150px !important;
+}
+.mysticBoxContent {
+    margin: 10px 10px 10px 10px !important;
+    background-color: #0783C1 !important;
+    border: 1px solid #C9C1D5;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+    width: 175px !important;
+    height: 150px !important;
+    cursor: pointer;
+}
+.textMystic{
+    font-size: 78px !important;
+    color: #808B96 !important;
+    margin: 10px 10px 10px 10px;
+}
+.textMysticOpened{
+    font-size: 78px !important;
+    color: #28a745 !important;
+    margin: 10px 10px 10px 10px;
+}
+.mysticLabelContent{
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px 10px 10px 10px !important;
+    background-color: transparent;
+    perspective: 1000px;
+    border: 1px solid #C9C1D5;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+.box-form {
     background-color: #ffffff;
 }
-.btn-start{
+
+.btn-start {
     width: 225px;
     height: 50px;
     background-color: #4caf50 !important;
     font-size: 16px !important;
 }
-.icon-left{
-    font-size: 28px !important ;
+
+.btn-reStart {
+    float: right !important;
+    background-color: #ffc107 !important;
+    font-size: 16px !important;
+}
+
+.btn-newGame {
+    float: right !important;
+    background-color: #17a2b8 !important;
+    font-size: 16px !important;
+    margin-right: 10px !important;
+}
+
+
+.icon-left {
+    font-size: 28px !important;
     margin-right: 5px !important;
-    margin-bottom: 2px !important;   
+    margin-bottom: 2px !important;
 }

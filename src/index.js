@@ -4,6 +4,7 @@ import './index.css';
 import { Router, browserHistory } from 'react-router'
 import * as serviceWorker from './serviceWorker';
 import routes from './routes'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <Router
